@@ -9,6 +9,9 @@ import pandas as pd
 from matplotlib import pyplot as plt
 data = pd.read_csv("...")
 solution = cdt.utils.read_list_edges("...")  
+nx.draw_networkx(solution, font_size=8) 
+plt.show()
+data.head()
 
 from cdt.independence.graph import FSGNN
 Fsgnn = FSGNN()
