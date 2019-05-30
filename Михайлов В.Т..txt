@@ -17,7 +17,7 @@ from cdt.independence.graph import FSGNN
 Fsgnn = FSGNN()
 
 start_time = time.time()
-ugraph = Fsgnn.predict(data, train_epochs=2000, test_epochs=1000, threshold=5e-4, l1=0.01)
+ugraph = Fsgnn.predict(data, train_epochs=1000, test_epochs=500, threshold=5e-4, l1=0.01)
 print("--- Execution time : %4.4s seconds ---" % (time.time() - start_time))
 
 
